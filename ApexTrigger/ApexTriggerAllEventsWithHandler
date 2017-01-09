@@ -1,0 +1,38 @@
+trigger {{ api_name }} on {{ object_name }} (	before insert, before update, before delete, after insert, after update, after delete, after undelete) {
+    
+    //// Replace "ClassTriggerHandler" with the trigger handler class
+    // ClassTriggerHandler handler = new ClassTriggerHandler(); 
+    
+    //// Replace "ClassTriggerHandler" with the trigger handler class
+    // handler.callFunction(trigger.new, trigger.newMap, trigger.old, trigger.oldMap);
+    
+    // ------------------------------------------------------------------------
+    //  ---------------------------- BEFORE EVENTS ----------------------------
+    // ------------------------------------------------------------------------
+    
+    if (Trigger.isBefore && Trigger.isInsert) // Before Insert
+    {
+    }
+    else if(Trigger.isBefore && Trigger.isUpdate) // Before Update
+    {
+    }
+    else if(Trigger.isBefore && Trigger.isDelete) // Before Delete
+    {
+    }
+    
+    // ------------------------------------------------------------------------
+    //  ---------------------------- AFTER EVENTS -----------------------------
+    // ------------------------------------------------------------------------
+    else if (Trigger.isAfter && Trigger.isInsert) // After Insert
+    {
+    }
+    else if (Trigger.isAfter && Trigger.isUpdate) // After Update
+    {  	
+    }        
+    else if (Trigger.isAfter && Trigger.isDelete) // After Delete
+    { 
+    }
+    else if (Trigger.isAfter && Trigger.isUnDelete) // After UnDelete
+    {   
+    }
+}
